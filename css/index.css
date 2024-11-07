@@ -362,6 +362,82 @@ p {
 
 /* --------- end rules --------- */
 
+/* !!! -------- form-container -------- */
+.form-container {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+
+}
+
+.form-container h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 320px;
+    position: relative;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.form-label {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.form-input {
+    padding: 16px;
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid #27242B;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+
+.form-message {
+    height: 130px;
+    text-align: start;
+}
+
+.form-input:focus {
+    border-color: #C42B6E;
+    outline: none;
+}
+
+.label-input:focus-within .form-label {
+    color: #C42B6E;
+}
+
+.send-button {
+    width: 100%;
+    padding: 16px 50px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+    background-color: #C42B6E;
+}
+
+/* -------- end form-container -------- */
 /* ------------- end main ------------- */
 @media (max-width: 768px) {
 
@@ -482,9 +558,20 @@ p {
     .desks {
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
 
     /* end rules */
+    /* start form-container*/
+    .form-container {
+        width: 100%;
+    }
+
+    .form-container h3 {
+        font-size: 26px;
+    }
+
+    /* end form-container*/
     /* ----- end main ----- */
 
 }
