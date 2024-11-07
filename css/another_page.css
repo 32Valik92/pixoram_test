@@ -1,0 +1,102 @@
+p {
+    margin: 0;
+}
+
+.main-container {
+    width: 75%;
+    margin: 50px 0 10px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    color: #FFFFFF;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.main-container h1 {
+    margin: 0;
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.pre-h {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.description-h {
+    width: 55%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.terms-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.terms-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+}
+
+.terms-list h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.terms-list p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.email-address {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* --------------------------------------------------- */
+@media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .main-container h1 {
+        font-size: 34px;
+    }
+
+    .pre-h, .description-h {
+        font-size: 16px;
+    }
+
+    .terms-list h4 {
+        font-size: 20px;
+    }
+
+    .terms-list p {
+        font-size: 16px;
+    }
+
+}
