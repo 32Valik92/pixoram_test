@@ -153,6 +153,13 @@ header {
 }
 
 /* ------------- end header ------------- */
+.divider {
+    width: 30%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #888, transparent);
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
 
 /* !!! ------------- main ------------- */
 main {
@@ -235,7 +242,7 @@ main {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
 .playing-class {
@@ -277,16 +284,83 @@ p {
     gap: 15px;
 }
 
-/*.images{*/
-/*    width: 22%;*/
-/*    max-width: 529px;*/
-/*}*/
-/*.images img{*/
-/*    max-width: 529px;*/
-/*    width: 100%;*/
-/*}*/
-
 /* -------- end playing_at_the_pokies_club -------- */
+
+/* !!! --------- rules --------- */
+.rules {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    color: #FFFFFF;
+}
+
+.rules-item {
+    display: flex;
+    gap: 57px;
+    box-sizing: border-box;
+}
+
+.instruction {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.instruction h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.instruction p {
+    font-size: 18px;
+}
+
+.desks {
+    display: flex;
+    gap: 40px;
+    box-sizing: border-box;
+
+}
+
+.desk {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    gap: 25px;
+    border: 4px #FFFFFF solid;
+}
+
+.desk-header {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.desk ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.desk li {
+    padding-left: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.desk-footer {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+
+/* --------- end rules --------- */
 
 /* ------------- end main ------------- */
 @media (max-width: 768px) {
@@ -363,7 +437,7 @@ p {
     .playing_at_the_pokies_club {
         width: 100%;
         flex-direction: column-reverse;
-        padding: 20px;
+        padding: 20px 20px 0 20px;
         box-sizing: border-box;
     }
 
@@ -385,6 +459,32 @@ p {
     }
 
     /* end playing_at_the_pokies_club*/
+    /* start rules */
+    .rules {
+        width: 100%;
+        padding: 20px 20px 0 20px;
+        box-sizing: border-box;
+    }
+
+    .rules-item {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .instruction h3 {
+        font-size: 26px;
+    }
+
+    .instruction p {
+        font-size: 16px;
+    }
+
+    .desks {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* end rules */
     /* ----- end main ----- */
 
 }
