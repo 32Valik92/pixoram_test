@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
+
+
+</head>
+<body>
+
+<header>
+    <div class="header-logo"><img src="images/logo.svg" alt="logo"></div>
+
+    <div class="header-menu">
+        <div class="menu-item">
+            <img src="images/home.svg" alt="home">
+            Home
+        </div>
+        <img src="images/line_vertical.svg" alt="line_vertical">
+
+        <div class="menu-item">
+            <img src="images/where.svg" alt="home">
+            Where to Play
+        </div>
+        <img src="images/line_vertical.svg" alt="line_vertical">
+
+        <div class="menu-item">
+            <img src="images/where.svg" alt="home">
+            Poker
+        </div>
+        <img src="images/line_vertical.svg" alt="line_vertical">
+
+        <div class="menu-item">
+            <img src="images/phone.svg" alt="home">
+            Сontact Us
+        </div>
+    </div>
+
+    <!-- Кнопка для відкриття бічного меню -->
+    <div class="menu-icon" onclick="openMenu()">
+        <img src="images/mobile_menu.svg" alt="mobile_menu">
+    </div>
+
+    <!-- Бічне меню -->
+    <div id="side-menu" class="side-menu">
+        <button class="close-btn" onclick="closeMenu()"><img src="images/close.svg" alt="close"></button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Poker</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="subscribe">
+            <h4>Stay updated on the latest news at Pokies Club</h4>
+            <input type="email" placeholder="Email">
+            <button>Submit</button>
+        </div>
+        <div class="contact-info">
+            <h4>Contact:</h4>
+            <div class="contact-info-email"><u>poker@pokiesclubaus.com</u></div>
+            <div class="contact-info-address">Pokies Club at Hendon Hotel<br>
+                Level 1, Hendon Hotel<br>
+                110 Tapley's Hill Rd, Royal Park, SA, 5014<br>
+                Australia
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+<script src="js/menu.js"></script>
+
+</body>
+</html>
