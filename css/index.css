@@ -730,6 +730,27 @@ footer {
         font-size: 20px;
     }
 
+    .footer {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .footer-submit-button{
+        width: 100%;
+    }
+
+    .footer-logo {
+        order: 1;
+    }
+
+    .footer-form {
+        order: 3;
+    }
+
+    .footer-links {
+        order: 2;
+    }
+
     /* end footer */
     /* ----- end main ----- */
 
