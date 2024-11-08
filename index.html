@@ -64,8 +64,14 @@
         </ul>
         <div class="subscribe">
             <h4>Stay updated on the latest news at Pokies Club</h4>
-            <input type="email" placeholder="Email">
-            <button>Submit</button>
+
+            <form class="footer-form">
+                <div class="label-input">
+                    <input class="form-input" type="text" placeholder="Email" required>
+                </div>
+
+                <button class="footer-submit-button">SUBMIT</button>
+            </form>
         </div>
         <div class="contact-info">
             <h4>Contact:</h4>
@@ -89,7 +95,7 @@
                     starting out or a veteran
                     player, you'll discover the perfect setting to enhance your skills and enjoy thrilling gameplay.
                 </div>
-                <button class="play-now">Play Now</button>
+                <button class="play-now" onclick="scrollToSection()">Play Now</button>
             </div>
         </div>
         <div class="chip-image">
@@ -284,6 +290,16 @@
         </div>
     </div>
 </footer>
+
+
+<!-- Modal Structure -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>Thank you!</h3>
+        <p>Your message has been received. We will get back to you shortly.</p>
+    </div>
+</div>
 
 <script src="js/menu.js"></script>
 
